@@ -1,0 +1,7 @@
+.dropZone {
+    width: 500px;
+    height: auto;
+    border: 2px dotted grey;
+    margin: 20px auto;
+    padding: 10px;
+}

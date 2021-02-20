@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import DropZone from './Components/DropZone/DropZone';
+import ReactSelect from './Components/ReactSelect/FavColor';
+
+import YourHobby from './Components/ReactSelect/YourHobby';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={{color: 'red'}}>Person's Profile</h1>
+      <ul>
+        <li><strong>Favourite color :</strong> <ReactSelect /> </li>
+        <li><strong> Favourite Hobbies(multiple entry valid) :</strong> <YourHobby /></li>
+        <li><strong> Upload Your photo :</strong> <DropZone /></li>
+      </ul>
     </div>
   );
 }
